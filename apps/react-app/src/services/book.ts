@@ -1,36 +1,44 @@
-import { DeleteBookParams, NewBookParams, UpdateBookParams } from '@buutti/shared'
+import type {
+	Book,
+	DeleteBookParams,
+	NewBookParams,
+	UpdateBookParams,
+} from "@buutti/shared";
 
-export const getBooks = async () => {
-  const response = await fetch('http://localhost:3000/v1/books/list')
-  return await response.json()
-}
+export const getBooks = async (): Promise<Book[]> => {
+	const response = await fetch("http://localhost:3000/v1/books");
+	return await response.json();
+};
 
-export const updateBook = async (b: UpdateBookParams) => {
-  return await fetch('http://localhost:3000/v1/books/', {
-    method: 'PUT',
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(b),
-  })
-}
+export const updateBook = async (b: UpdateBookParams): Promise<number> => {
+	const response = await fetch("http://localhost:3000/v1/books", {
+		method: "PUT",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(b),
+	});
+	return await response.json();
+};
 
-export const deleteBook = async (b: DeleteBookParams) => {
-  return await fetch('http://localhost:3000/v1/books/', {
-    method: 'DELETE',
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(b)
-  })
-}
+export const deleteBook = async (b: DeleteBookParams): Promise<void> => {
+	const response = await fetch("http://localhost:3000/v1/books", {
+		method: "DELETE",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(b),
+	});
+	return await response.json();
+};
 
-export const createBook = async (b: NewBookParams) => {
-  return await fetch('http://localhost:3000/v1/books/create', {
-    method: 'POST',
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(b)
-  })
-}
+export const createBook = async (b: NewBookParams): Promise<number> => {
+	const response = await fetch("http://localhost:3000/v1/books", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(b),
+	});
+	return await response.json();
+};
