@@ -1,0 +1,17 @@
+{
+  "name": "buutti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:db": "cd apps/fastify-app && pnpm run dev:db",
+    "dev": "concurrently \"cd ./apps/fastify-app && pnpm run dev\"  \"cd ./apps/react-app && pnpm run dev\"  ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
