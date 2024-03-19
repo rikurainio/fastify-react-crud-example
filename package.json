@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "biome format ./apps ./packages",
+    "lint": "biome lint ./apps ./packages",
+    "check": "biome check --apply ./apps ./packages",
     "dev:db": "cd apps/fastify-app && pnpm run dev:db",
     "dev": "concurrently -r \"cd ./apps/fastify-app && pnpm run dev\"  \"cd ./apps/react-app && pnpm run dev\"  ",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "1.6.1",
     "concurrently": "^8.2.2"
   }
 }
