@@ -11,7 +11,7 @@ const BookCard = ({ book, className, ...props }: BookCardProps) => {
 		<div
 			{...props}
 			className={cn(
-				"bg-card px-3 py-1 rounded border border-border h-20 w-full cursor-pointer",
+				"bg-card hover:outline hover:outline-1 px-3 py-1 rounded border border-border h-20 max-h-20 min-h-20 w-full cursor-pointer",
 				className,
 			)}
 		>

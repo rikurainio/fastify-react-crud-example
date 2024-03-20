@@ -122,7 +122,7 @@ const BookForm = ({
 				<Button
 					disabled={!!editingBook}
 					className={cn(
-						editingBook && "bg-black bg-opacity-40 pointer-events-none",
+						editingBook && "bg-buttonDisabledBackground text-buttonDisabledText pointer-events-none",
 					)}
 					type="submit"
 					name="button-save-new"
@@ -132,7 +132,7 @@ const BookForm = ({
 				<Button
 					disabled={!editingBook}
 					className={cn(
-						!editingBook && "bg-black bg-opacity-40 pointer-events-none",
+						!editingBook && "bg-buttonDisabledBackground text-buttonDisabledText pointer-events-none",
 					)}
 					type="submit"
 					name="button-save-edit"
@@ -142,7 +142,7 @@ const BookForm = ({
 				<Button
 					disabled={!editingBook}
 					className={cn(
-						!editingBook && "bg-black bg-opacity-40 pointer-events-none",
+						!editingBook && "bg-buttonDisabledBackground text-buttonDisabledText pointer-events-none",
 					)}
 					type="submit"
 					name="button-delete"
