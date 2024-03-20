@@ -11,7 +11,7 @@ Install packages: ```pnpm install```
 PostgreSQL container to work. Open the link and select your operating system.
 
 To start a locally hosted container with PostgreSQL,
-and set up the db, run ```pnpm run dev:setup:db```. Make sure you have Docker Engine running.
+and set up the db, run ```pnpm run dev:db:setup```. Make sure you have Docker Engine running.
 
 ## Starting dev servers
 To **start both applications**, run: ```pnpm run dev```.
