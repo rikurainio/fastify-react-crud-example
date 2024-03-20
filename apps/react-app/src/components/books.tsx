@@ -30,8 +30,11 @@ const Books = () => {
 			/>
 
 			{/** Map books */}
-			<div className="w-full h-full overflow-y-scroll flex flex-col gap-2 border border-border rounded p-2 mt-[4.25rem] max-h-[35vh] lg:max-h-[80vh]">
-				{books?.map((book: Book) => (
+			<div
+        data-testid="container-books"
+        className="w-full h-full overflow-y-scroll flex flex-col gap-2 border border-border rounded p-2 mt-[4.25rem] max-h-[35vh] lg:max-h-[80vh]"
+      >
+				{books?.sort((a,b) => b.id - a.id).map((book: Book) => (
 					<BookCard
 						key={book.id}
 						book={book}
