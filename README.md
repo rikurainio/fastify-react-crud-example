@@ -24,4 +24,8 @@ The api routes are prefixed with v1, so for example the route to get all the boo
 You can specify different ports by using **.env** files for the apps
 
 ## Running tests
-To run simple playwright tests, run ```pnpm run test``` on project root
+To run simple playwright tests, run ```pnpm run test``` on the project root
+
+## Linting, formatting
+Done with Biome.js defaults. Use scripts ```format```, ```lint```, ```check```
+in root package.json
