@@ -8,6 +8,7 @@
 		"build": "tsc -p tsconfig.json",
 		"build:dev": "tsc --watch",
 		"dev": "npx tsx watch --clear-screen=false src/index.ts",
+    "dev:db:helper": "npx tsx dbHelper.ts",
 		"db:generate": "drizzle-kit generate:pg",
 		"db:push": "drizzle-kit push:pg",
 		"dev:db": "docker compose -f \"docker.compose.dev.yml\" up -d --build",
