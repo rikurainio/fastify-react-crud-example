@@ -10,6 +10,8 @@ export default {
 				input: "var(--input)",
 				button: "var(--button)",
 				buttonHover: "var(--buttonHover)",
+        buttonDisabledBackground: "var(--buttonDisabledBackground)",
+        buttonDisabledText: "var(--buttonDisabledText)",
 				text: "var(--text)",
 			},
 		},

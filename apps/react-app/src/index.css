@@ -17,6 +17,8 @@
     --border: #abaaaa;
     --input: #cdcdcd;
     --button: #c0c0c0;
+    --buttonDisabledBackground: #a8a8a8;
+    --buttonDisabledText: #7a7a7a;
     --buttonHover: #c9c8c8;
     --text: #202020;
   }
