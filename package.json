@@ -12,7 +12,7 @@
     "dev:setup:db": "pnpm run dev:db && cd apps/fastify-app && pnpm run db:generate",
     "sleep5s": "node -e \"setTimeout(() => process.exit(0), 5000)\"",
     "dev": "concurrently -r \"cd ./apps/fastify-app && pnpm run dev\"  \"cd ./apps/react-app && pnpm run dev\"  ",
-    "test": "concurrently -r \"pnpm run dev\" \"pnpm run sleep5s && npx playwright test\""
+    "test": "concurrently -r \"pnpm run dev\" \"pnpm run sleep5s && cd ./apps/e2e-tests && npx playwright test\""
   },
   "keywords": [],
   "author": "",
