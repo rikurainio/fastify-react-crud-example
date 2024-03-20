@@ -19,6 +19,8 @@ This will start the apps:
 frontend at: [http://localhost:5173](http://localhost:5173 "http://localhost:5173")
 backend at: [http://localhost:3000](http://localhost:3000 "http://localhost:3000")
 
+The api routes are prefixed with v1, so for example the route to get all the books is:
+```http://localhost:3000/v1/books/```
 You can specify different ports by using **.env** files for the apps
 
 ## Running tests
