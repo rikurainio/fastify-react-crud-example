@@ -6,14 +6,13 @@ This project is a pnpm monorepo containing two apps:
 Install pnpm:```npm install -g pnpm@latest```
 Install packages:```pnpm install```
 
-### Setting up the local database
+## Setting up the local database
 **You must have** [Docker](https://docs.docker.com/get-docker/ "Get Docker") installed on your machine, for the local
-postgresql container to work. Open the link and select your operating system.
+PostgreSQL container to work. Open the link and select your operating system.
 
-To start a locally hosted container that includes PostgreSQL,
-run```pnpm run dev:db```. Make sure you have Docker Engine running.
+To start a locally hosted container with PostgreSQL, run'''pnpm dev:db```. Make sure you have Docker Engine running.
 
-### Starting dev servers
+## Starting dev servers
 To **start both applications**, run:```pnpm run dev```.
 This will start the apps:
 frontend at: [http://localhost:5173](http://localhost:5173 "http://localhost:5173")
@@ -21,5 +20,5 @@ backend at: [http://localhost:3000](http://localhost:3000 "http://localhost:3000
 
 You can specify different ports by using **.env** files for the apps
 
-### Running tests
+## Running tests
 To run simple playwright tests, run```pnpm run test```on project root
