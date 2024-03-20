@@ -8,8 +8,10 @@
     "lint": "biome lint ./apps ./packages",
     "check": "biome check --apply ./apps ./packages",
     "dev:db": "cd apps/fastify-app && pnpm run dev:db",
+    "dev:db:helper": "cd apps/fastify-app && pnpm run dev:db:helper",
+    "sleep5s": "node -e \"setTimeout(() => process.exit(0), 5000)\"",
     "dev": "concurrently -r \"cd ./apps/fastify-app && pnpm run dev\"  \"cd ./apps/react-app && pnpm run dev\"  ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "concurrently -r \"pnpm run dev\" \"pnpm run sleep5s && npx playwright test\""
   },
   "keywords": [],
   "author": "",
