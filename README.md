@@ -3,6 +3,7 @@ This project is a pnpm monorepo containing two apps:
 - React-app (frontend)
 
 # Development setup
+Make sure you have [Node.js](https://nodejs.org/en/download) installed
 Install pnpm: ```npm install -g pnpm@latest```
 Install packages: ```pnpm install```
 
